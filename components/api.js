@@ -8,18 +8,17 @@ const index = () => {
 
   useEffect(() => {
     const getUser = () => {
-      fetch("http://localhost:5000/auth/login/success", {
+      fetch("http://locahost:8000/auth/login/success", {
         method: "GET",
         credentials: "include",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
           "Access-Control-Allow-Credentials": true,
-          "Access-Control-Allow-Origin": true,
         },
       })
-        .then((response) => {
-          if (response.status === 200) return response.json();
+        .then((res) => {
+          if (res.status === 200) return res.json();
           throw new Error("Oops!! Authentication Failed!");
         })
         .then((resonseObject) => {
@@ -31,7 +30,6 @@ const index = () => {
   }, []);
 
   console.log(user);
-
   {
     if (user) {
       return (

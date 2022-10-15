@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,800;1,100;1,200&family=Source+Sans+Pro:ital,wght@0,200;0,400;0,700;0,900;1,300;1,400&family=Urbanist:ital,wght@0,100;0,300;1,300;1,400;1,500&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins, sans-serif;
+}
+
+a {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+:root {
+  --main_color: #ff1493;
+}
+/* ================nav designs=========================== */
+
+.navbar {
+  height: 50px;
+  background-color: var(--main_color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.listItem {
+  margin-right: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.userAvater {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ================home designs=========================== */
+.home {
+  widows: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.item {
+  border: 2px solid var(--main_color);
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2.5rem;
+  margin: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 500ms;
+}
+
+.item:hover {
+  border: 3px solid var(--main_color);
+}
+
+.itemImg {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.itemButton {
+  border: none;
+  outline: none;
+  background-color: var(--main_color);
+  font-size: 1rem;
+  color: white;
+  height: 3rem;
+  width: auto;
+  padding: 0 1rem;
+  border-radius: 5px;
+}
+
+/* ====================login page======================= */
+
+.loginPage {
+  text-align: center;
+}
+.loginPage .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 80vh;
+  border-radius: 7px;
+  padding: 1.5rem;
+  margin: auto;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper .loginLeft,
+.loginRight {
+  width: 30%;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 2rem;
+  gap: 2rem;
+}
+.wrapper .loginRight {
+  width: 48%;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.RegisterBtn {
+  color: rgba(255, 10, 161, 0.5);
+}
+
+.wrapper form {
+  width: 48%;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2rem;
+  gap: 2rem;
+}
+
+.loginRight input {
+  width: 20rem;
+  height: 2.3rem;
+  padding-left: 1em;
+  border: 1.5px solid var(--main_color);
+  border-radius: 7px;
+}
+
+.SubmitButton {
+  width: 20rem;
+  height: 2.3rem;
+  padding-left: 1em;
+  border: 1.5px solid var(--main_color);
+  border-radius: 7px;
+  background-color: var(--main_color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.loginButton {
+  background: var(--main_color);
+  color: white;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.loginButton:focus {
+  border: 1px solid black;
+}
+
+/* ====================Register page======================= */
+.Register {
+  background-color: #fff;
+  margin: auto;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 50vw;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.Register form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Register .formGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: fit-content;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+.Register input {
+  background-color: #fff;
+  padding-left: 1em;
+  border: 2px solid var(--main_color);
+  border-radius: 8px;
+  height: 2.5rem;
+  width: 80%;
+}
+
+.Register input:focus {
+  border: 1px solid #fff;
+  outline: none;
+  box-shadow: 0px 0px 0.25rem rgba(255, 10, 161, 0.5);
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: fit-content;
+  text-align: center;
+}
+
+.btnContainer .button {
+  width: 50%;
+  height: 2.3rem;
+  border: none;
+  background: var(--main_color);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
